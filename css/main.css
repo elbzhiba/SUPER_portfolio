@@ -134,7 +134,8 @@ main section article{
 main section article h3{
     text-transform: uppercase;
     font-size: 2rem;
-    
+    background-color: #292F33;
+    color: #FFF;
 }
 
 
