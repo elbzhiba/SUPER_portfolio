@@ -229,32 +229,66 @@ footer .mail, footer .phone{
     width: 80rem;
     font-size: 2rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 70rem) {
+    body{
+        margin: 1%;
+    }
+   header{
+       position: static;
+   }
+    header h1, :is(nav){
+        display: block;
+        width:auto;
+    }
+    main{
+        margin-top: .1rem;
+        padding: 0;
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav ul li{
+        display: block;
+        width: auto;
+     
+     
+    }
+    nav ul li a{
+        text-align: left;
+    }
     main section div {
-        grid-template-columns: repeat(2,1fr);
+        display: block;
+        width: auto;
+        
     }
-    .grid-loisir{
-        display: flex;
-        gap: 5rem;
-        flex-direction: column;
-        text-align: center;
+    main section article{
+        display: block;
     }
-    section article:nth-of-type(3),
-    section article:nth-of-type(4){
-        grid-column: 1 / 5;
-       
+    footer .mail, footer .phone{
+        width: auto;
     }
-    footer .phone,
-    footer .mail{
-        width: 100%;
-    }
+    .grid-loisir {
+  
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        
+      }
 }
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 120rem) {
     section article,
     section article:nth-of-type(6){
         grid-column: 1 / 5;
     }
     section .grid-logo{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
     }
-}
+    .grid-loisir {
+  
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 3rem;
+        
+      }
+    
+} */
