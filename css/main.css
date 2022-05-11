@@ -152,8 +152,10 @@ section article ul {
     padding : .5rem;
 
 }
+
 section article:nth-of-type(6) {
     grid-column: 2 / 5;
+  
    
 }
 section article ul li a {
@@ -171,9 +173,14 @@ section .grid-logo{
 }
 .grid-loisir {
   
-  display: inline-flex;
-  gap: 5rem;
-  text-align: right;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  
+}
+.grid-loisir li img{
+    vertical-align: middle;
+    margin-right: .4rem;
 }
 
 .language {
@@ -221,4 +228,33 @@ footer .mail, footer .phone{
     display: inline-block;
     width: 80rem;
     font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+    main section div {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-loisir{
+        display: flex;
+        gap: 5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    section article:nth-of-type(3),
+    section article:nth-of-type(4){
+        grid-column: 1 / 5;
+       
+    }
+    footer .phone,
+    footer .mail{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 390px) {
+    section article,
+    section article:nth-of-type(6){
+        grid-column: 1 / 5;
+    }
+    section .grid-logo{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
