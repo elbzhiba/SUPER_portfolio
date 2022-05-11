@@ -169,10 +169,11 @@ section .grid-logo{
     grid-auto-flow: dense;
    
 }
-.grid-loisir ul li{
-    display: inline-block;
-    vertical-align: middle;
-    color: red;
+.grid-loisir {
+  
+  display: inline-flex;
+  gap: 5rem;
+  text-align: right;
 }
 
 .language {
