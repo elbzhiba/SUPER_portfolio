@@ -31,10 +31,6 @@ a{
     color: #222;
 }
 
-button{
-    background-color: transparent;
-    border: 0;
-}
 .material-icons{
     vertical-align: -.4rem;
     margin-right: .3rem;
@@ -43,7 +39,7 @@ button{
     theme
 */
 *{
-    /* For FF and non-webkit browsers */
+    
     scrollbar-width: thin;
     scrollbar-color: #000 #FFF;
 }
@@ -56,7 +52,7 @@ button{
 }
 :root{
     --color-default:  #292F33;
-    --color-primary: #55ACEE;
+    --color-primary: #98b7ce;
     --color-secondary: #66757F;
     --color-block: #CCD6DD;
     --color-last-bg: #fff;
