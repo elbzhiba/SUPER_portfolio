@@ -156,6 +156,10 @@ section article:nth-of-type(6) {
     grid-column: 2 / 5;
    
 }
+section article ul li a {
+    margin: 13rem;
+    
+}
 section .grid-logo{
     width: auto;
     display: grid;
@@ -165,6 +169,12 @@ section .grid-logo{
     grid-auto-flow: dense;
    
 }
+.grid-loisir ul li{
+    display: inline-block;
+    vertical-align: middle;
+    color: red;
+}
+
 .language {
     width: 100%;
 }
